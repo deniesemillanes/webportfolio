@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Start Nav */
+nav {
+	overflow: hidden;
+	background-color: #6B0F1A;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+}
+
+a:hover {
+	color: #FF5733;
+	text-shadow:
+		0 0 7px #FF5733,
+		0 0 10px #FF5733,
+		0 0 21px #FF5733,
+		0 0 42px #FF5733,
+		0 0 82px #FF5733,
+		0 0 92px #FF5733,
+		0 0 102px #FF5733,
+		0 0 151px #FF5733;
+	font-family: 'Noto Serif', serif; 
+	font-weight: bolder;
+	color: red;
+}
+
+a {
+	color: white;
+	font-size: 1rem;
+	color: #6B0F1A;
+}
+/* End Nav */
+
+/* Start Landing Page */
+
