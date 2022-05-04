@@ -3,8 +3,13 @@
     padding: 0;
 }
 
+body {
+	font-family: 'Noto Serif', serif;  
+	background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%); 
+}
+
 /* Start Nav */
-nav {
+.navbar {
 	overflow: hidden;
 	background-color: #6B0F1A;
 	position: fixed; /* Set the navbar to fixed position */
@@ -25,15 +30,245 @@ a:hover {
 		0 0 151px #FF5733;
 	font-family: 'Noto Serif', serif; 
 	font-weight: bolder;
-	color: red;
 }
 
 a {
 	color: white;
 	font-size: 1rem;
-	color: #6B0F1A;
+}
+
+.main {
+	margin-top: 50px; /* Add a top margin to avoid content overlay */
 }
 /* End Nav */
 
 /* Start Landing Page */
+.full-height {
+	height: 100%;
+}
+
+.container-fluid h1 {
+	margin-top: 50px;
+	font-family: 'Neonderthaw', cursive;
+	font-size: 7vw;
+	color: #FF5733;
+	text-shadow:
+		0 0 7px #FF5733,
+		0 0 10px #FF5733,
+		0 0 21px #FF5733,
+		0 0 42px #FF5733,
+		0 0 82px #FF5733,
+		0 0 92px #FF5733,
+		0 0 102px #FF5733,
+		0 0 151px #FF5733;
+	animation: flicker 1.5s infinite alternate;     
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+    text-shadow:
+ 	   0 0 4px #fff,
+ 	   0 0 11px #fff,
+ 	   0 0 19px #fff,
+       0 0 40px #6B0F1A,
+   	   0 0 80px #6B0F1A,
+       0 0 90px #6B0F1A, 
+       0 0 100px #6B0F1A,
+       0 0 150px #6B0F1A;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+.portfolio{
+	font-family: 'Noto Serif', serif; 
+	font-size: 3vw ;
+	color: #FF5733;
+	text-shadow:
+	    0 0 7px #fff,
+	    0 0 10px #fff,
+	    0 0 21px #fff,
+	    0 0 42px #FF5733,
+	    0 0 82px #FF5733,
+	    0 0 92px #FF5733,
+	    0 0 102px #FF5733,
+	    0 0 151px #FF5733;     
+}
+/* End Landing Page */
+
+/*Start About Me*/
+.about {
+	margin-top: 50px;
+	font-size: 7vw;
+	font-family: 'Neonderthaw', cursive;
+	padding-top: 1rem;
+	color: #FF5733;
+}
+
+.description p {
+	font-size: 1rem;
+	text-align: right;
+	align-content: right;
+
+}
+/*End About Me*/
+#gallery {
+	margin-top: 50px;
+	
+}
+.carousel .carousel-item {
+	height: 500px;
+  }
+/*Start Gallery*/
+ 
+/*End Gallery*/
+
+#contact {
+	box-shadow: 20px 20px 50px #00d2c6, 
+            -30px -30px 60px #00ffff;
+}
+
+
+
+
+/*Start Contact*/
+.title {
+	font-size: 7rem ;
+	font-family: 'Neonderthaw', cursive;
+	padding: 1rem;
+	color: #9F0E31;
+}
+
+#contact {  
+       min-height: 100vh;  
+       margin: 0;   
+       font-family: Arial;  
+       display: flex;  
+       justify-content: center;  
+       align-items: center;  
+       flex-direction: column;  
+}  
+
+.wrapper {  
+       max-width: 400px;  
+       width: 100%;  
+       padding: 30px;  
+       border-radius: 30px;  
+       background: #fff;  
+       box-shadow: 0 35px 68px 0 rgba(136, 174, 222, 0.42), inset 0 -8px 16px 0 #b9d1f1;  
+}  
+
+.header {  
+	font-size: 36px;  
+	font-weight: 500;  
+	margin: 0 0 12px;  
+	text-align: center;  
+} 
+
+.headerText {  
+	font-size: 16px;  
+	margin: 0 0 24px 0;  
+	text-align: center;  
+}  
+
+.inputWrapper {  
+	display: flex;  
+	flex-direction: column;  
+	align-items: flex-start;  
+	justify-content: flex-start;  
+	width: 100%;  
+	margin: 0 0 16px 0;  
+}  
+.inputWrapper label {  
+	margin: 0 0 4px 0;  
+}  
+.inputWrapper input, .inputWrapper textarea {  
+	width: 100%;  
+	height: 40px;  
+	padding: 8px 16px;  
+	font-size: 16px;  
+	border-radius: 8px;  
+	border: 1px solid #b5d4ff;  
+	color: #576d95;  
+ 
+}  
+.submitButton {  
+	border: none;  
+	padding: 12px 30px;  
+	margin: 0 auto;  
+	display: block;  
+	font-size: 16px;  
+	color: #fff;  
+	border-radius: 8px;  
+	background-image: linear-gradient(90deg, #5fc7ff 50%, #43a8ff 100%);  
+	background-size: 200% 100%;  
+	background-position: 100% 100%;  
+	transition: background-position 256ms;  
+	will-change: background-position;  
+	cursor: pointer;  
+}  
+.submitButton:hover {  
+	background-position: 0% 200%;  
+}  
+.link {  
+	font-size: 16px;  
+	margin: 50px 0 0 0;  
+	display: block;  
+	max-width: 400px;  
+	width: 100%;  
+	padding: 50px;  
+	text-align: center;  
+	color: #576d95;  
+	border-radius: 30px;  
+	background: #fff;  
+	box-shadow: 0 35px 68px 0 rgba(136, 174, 222, 0.42), inset 0 -8px 16px 0 #b9d1f1;  
+}  
+/**/
+/*End Contact*/ 
+
+/*Start Social*/
+.social h3{
+	font-family: 'Neonderthaw', cursive;
+	font-size: 3rem ;
+	color: #FF5733;
+	text-shadow:
+	    0 0 7px #fff,
+	    0 0 10px #fff,
+	    0 0 21px #fff,
+	    0 0 42px #FF5733,
+	    0 0 82px #FF5733,
+	    0 0 92px #FF5733,
+	    0 0 102px #FF5733,
+	    0 0 151px #FF5733; 
+	    animation: flicker 1.5s infinite alternate;     
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+    text-shadow:
+ 	   0 0 4px #fff,
+ 	   0 0 11px #fff,
+ 	   0 0 19px #fff,
+       0 0 40px #6B0F1A,
+   	   0 0 80px #6B0F1A,
+       0 0 90px #6B0F1A, 
+       0 0 100px #6B0F1A,
+       0 0 150px #6B0F1A;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+/*End Social*/
 
