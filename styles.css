@@ -103,7 +103,7 @@ a {
 /* End Landing Page */
 
 /*Start About Me*/
-.about {
+.about, h2 {
 	margin-top: 50px;
 	font-size: 7vw;
 	font-family: 'Neonderthaw', cursive;
@@ -138,12 +138,7 @@ a {
 
 
 /*Start Contact*/
-.title {
-	font-size: 7rem ;
-	font-family: 'Neonderthaw', cursive;
-	padding: 1rem;
-	color: #9F0E31;
-}
+
 
 #contact {  
        min-height: 100vh;  
@@ -235,7 +230,7 @@ a {
 /*Start Social*/
 .social h3{
 	font-family: 'Neonderthaw', cursive;
-	font-size: 3rem ;
+	font-size: 3vw;
 	color: #FF5733;
 	text-shadow:
 	    0 0 7px #fff,
@@ -269,6 +264,11 @@ a {
   20%, 24%, 55% {        
       text-shadow: none;
   }    
+}
+
+.btn {
+	size: sm;
+	font-size: 1vw;
 }
 /*End Social*/
 
